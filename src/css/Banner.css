@@ -1,0 +1,10 @@
+.bannerShop{
+    color: var(--rick-text);
+    text-shadow: 2px 0 0 var(--rick-border), -2px 0 0 var(--rick-border),0 2px 0 var(--rick-border),0 -2px 0 var(--rick-border), 1px 1px 0 var(--rick-border), -1px -1px 0 var(--rick-border),1px -1px 0 var(--rick-border),-1px 1px 0 var(--rick-border);
+    font-family: var(--rick-font);
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 10;
+    margin: 50px;
+}

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+
+
+
+.detailsContent{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.buttonBack{
+    margin-left: 20px;
+    position: absolute;
+    top: 0;
+    right: 20;
+    margin: 50px;
+    font-size: 80px;
+    background-color: transparent;
+    color: var(--rick-text);
+    text-shadow: 2px 0 0 var(--rick-border), -2px 0 0 var(--rick-border),0 2px 0 var(--rick-border),0 -2px 0 var(--rick-border), 1px 1px 0 var(--rick-border), -1px -1px 0 var(--rick-border),1px -1px 0 var(--rick-border),-1px 1px 0 var(--rick-border);
+    border: none;
+    cursor: url(../assets/portalCursor.png), pointer;
+}
+
+.planetContent{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.planetTitle{
+    margin: 20px;
+    text-align: center;
+    font-family: var(--rick-font);
+    font-size: 50px;
+    text-shadow: 2px 0 0 var(--rick-border), -2px 0 0 var(--rick-border),0 2px 0 var(--rick-border),0 -2px 0 var(--rick-border), 1px 1px 0 var(--rick-border), -1px -1px 0 var(--rick-border),1px -1px 0 var(--rick-border),-1px 1px 0 var(--rick-border);
+    color: var(--rick-text);
+}
+
+.planetInfos{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+
+.planetImg{
+    margin-left: 20px;
+    width: 600px;
+}
+
+.charaContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.charaTitle{
+    margin: 20px;
+    text-align: center;
+    font-family: var(--rick-font);
+    font-size: 50px;
+    text-shadow: 2px 0 0 var(--rick-border), -2px 0 0 var(--rick-border),0 2px 0 var(--rick-border),0 -2px 0 var(--rick-border), 1px 1px 0 var(--rick-border), -1px -1px 0 var(--rick-border),1px -1px 0 var(--rick-border),-1px 1px 0 var(--rick-border);
+    color: var(--rick-text);
+}
+
+.charaDetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:10px;
+}
+
+.charaImg img{
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid greenyellow;
+    width: 100px;
+    z-index: 1;
+    transition: transform .2s;
+    margin: 2px;
+}
+
+.charaImg img:hover{
+    transform: scale(1.5);
+    z-index: 3;
+}
+
+.charaImg{
+    position: relative;
+    display: inline-block;
+    
+}
+
+.charaImg .charaTooltip{
+    visibility: hidden;
+    width: 150px;
+    font-family: var(--text-font);
+    background-color: var(--rick-text);
+    box-shadow: 2px 0 0 var(--rick-border), -2px 0 0 var(--rick-border),0 2px 0 var(--rick-border),0 -2px 0 var(--rick-border), 1px 1px 0 var(--rick-border), -1px -1px 0 var(--rick-border),1px -1px 0 var(--rick-border),-1px 1px 0 var(--rick-border);
+    color: black;
+    padding: 5px 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+    
+}
+
+.charaImg .charaTooltip::after{
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:   var(--rick-border) transparent  transparent transparent; 
+}
+
+.charaImg:hover .charaTooltip{
+    visibility: visible;
+    
+}
+
+.charaName{
+    text-align: center;
+}
+
+.boldText{
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+

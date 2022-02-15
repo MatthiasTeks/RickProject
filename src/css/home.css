@@ -1,0 +1,254 @@
+/* =============== CLASSES =============== */
+
+/* Main home */
+
+.containerHolder {
+    width: 800px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    position: absolute;
+    top: 15%;
+    right: 13%;
+    margin: var(--mt-3);
+    z-index: var(--z-tooltip);
+}
+
+.containerResume {
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size: var(--h3-font-size);
+    letter-spacing: var(--spacing-font);
+}
+
+.resumeText {
+    margin-left: var(--mt-0-5);
+    margin-right: var(--mt-0-5);
+}
+
+.buttonRandom {
+    align-self: flex-end;
+    background-color: var(--second-color-flashy);
+    margin-top: var(--mt-3);
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: var(--text-font);
+    letter-spacing: 1.3px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-size: var(--title-font);
+    width: 250px;
+    cursor: pointer;
+    box-shadow: 1px 3px 13px 0px #D2DA4B;
+}
+
+
+
+/* Interface get aventure */
+
+.holderInterface {
+    opacity: 0;
+    position: absolute;
+    padding: 2%;
+    z-index: 101;
+    right: 40%;
+    top: 15%;
+    width: 600px;
+    height: 380px;
+    background-color: black;
+    border-radius: 25px;
+    border: 1px solid gray;
+    animation: interfaceAppear 0.5s ease-in-out forwards;
+}
+
+.holderHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.interfaceEpisode {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nameEpisode {
+    font-family: var(--title-font);
+    font-size: var(--h2-font-size);
+    color: var(--text-color);
+}
+
+.dateEpisode {
+    font-family: var(--text-font);
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+}
+
+.holderButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.resumeEpisode {
+    margin-top: var(--mt-2);
+    font-family: var(--text-font);
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+}
+
+.redirectionImage {
+    margin-top: var(--mt-0-25);
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.watchFont {
+    width: 100%;
+    margin-top: var(--mt-2);
+    font-family: var(--text-font);
+    font-size: var(--h2-font-size);
+    color: var(--text-color);
+}
+
+.refreshButton {
+    background-color: var(--second-color-flashy);
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: var(--text-font);
+    letter-spacing: 1.3px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-size: var(--title-font);
+    width: 198px;
+    height: 52px;
+    cursor: pointer;
+    box-shadow: 1px 3px 13px 0px #D2DA4B;
+}
+
+.closeButton {
+    cursor: pointer;
+}
+
+/* =============== QUERIES =============== */
+
+@media screen and (max-width: 1024px) {
+    .containerHolder {
+        top: 25%;
+        right: -10%;
+        width: 350px;
+    }
+    .containerResume {
+        font-size: var(--h2-font-size);
+    }
+    .refreshButton {
+        background-color: var(--second-color-flashy);
+        border-radius: 25px;
+        color: white;
+        padding: 10px 32px;
+        text-align: center;
+        font-family: var(--text-font);
+        letter-spacing: 1.3px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        font-size: var(--title-font);
+        width: 120px;
+        height: 40px;
+        cursor: pointer;
+        box-shadow: 1px 3px 13px 0px #D2DA4B;
+    }
+    .redirectionImage {
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .containerHolder {
+        top: 8%;
+        right: -10%;
+        width: 350px;
+    }
+    .containerResume {
+        font-size: var(--h3-font-size);
+    }
+    .buttonRandom {
+        align-self: flex-end;
+        background-color: var(--second-color-flashy);
+        margin-top: var(--mt-1-5);
+        border-radius: 25px;
+        margin-right: var(--mt-0-5);
+        color: white;
+        padding: 10px 32px;
+        text-align: center;
+        font-family: var(--text-font);
+        letter-spacing: 1.3px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        font-size: var(--title-font);
+        width: 185px;
+        cursor: pointer;
+        box-shadow: 1px 3px 13px 0px #D2DA4B;
+    }
+    .holderLine {
+        bottom: -6%;
+    }
+    .holderInterface {
+        opacity: 0;
+        position: absolute;
+        padding: 2%;
+        z-index: 101;
+        right: -10%;
+        top: 5%;
+        width: 430px;
+        height: 380px;
+        background-color: black;
+        border-radius: 25px;
+        border: 1px solid gray;
+        animation: interfaceAppear 0.5s ease-in-out forwards;
+    }
+    .interfaceEpisode {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
+/* =============== KEYFRAMES =============== */
+
+@keyframes interfaceAppear {
+    0% {
+        opacity: 0.2;
+    }
+    25% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    75% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.95;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .rickFromLeftScreen, .textArea, .textSay {
+        display: none;
+    }
+    .button > p {
+        font-size: 22px;
+    }
+}

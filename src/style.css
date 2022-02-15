@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+@font-face 
+{
+  font-family: "GetSchwifty";
+  src: local("get-schwhifty"), url("./fonts/get-schwifty.ttf") format("truetype");
+  font-weight: bold;
+}
+
+/* =============== VARIABLE =============== */
+
+:root {
+  /* color */
+  --first-color: #16ACC9;
+  --first-color-darker: #143F48;
+  --second-color: #D2DA4B;
+  --second-color-flashy: #42ca20;
+  --text-color: #F8F7FF;
+  --container-color: #9998A3;
+  --rick-text: #00a4c0;
+  --rick-border: #cceb83;
+
+  /* fonts */
+
+  --title-font: 'Zen Kurenaido', sans-serif;
+  --text-font: 'Zen Kurenaido', sans-serif;
+  --rick-font: 'GetSchwifty';
+
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .831rem;
+  --smaller-font-size: .75rem;
+
+  --spacing-font: 0.5px;
+  
+  /* margin top */ 
+  --mt-0-25: .25rem;
+  --mt-0-5: .5rem;
+  --mt-0-75: .75rem;
+  --mt-1: 1rem;
+  --mt-1-5: 1.5rem;
+  --mt-2: 2rem;
+  --mt-2-5: 2.5rem;
+  --mt-3: 3rem;
+
+  /* z index */ 
+  --z-tooltip: 10 ;
+  --z-fixed: 100 ;
+  --z-modal: 1000 ;
+}
+
+@media screen and (max-width: 1024px) {
+
+  :root {
+    --h1-font-size: 1.25rem;
+    --h2-font-size: 1rem;
+    --h3-font-size: .75rem;
+    --normal-font-size: .60rem;
+    --small-font-size: .50rem;
+    --smaller-font-size: .35rem;
+  
+    --spacing-font: 0.25px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  :root {
+    --h1-font-size: 1rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .75rem;
+    --small-font-size: .20rem;
+    --smaller-font-size: .15rem;
+  
+    --spacing-font: 0.1px;
+  }
+
+}
+
+/* =============== BASE =============== */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.fullpage-wrapper{
+  cursor: url(./assets/gunCursor.png), auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* =============== PAGE ID =============== */
+
+
+#slide1 {
+  background-image: url(./assets/background.png);
+  background-size: cover;
+}
+
+#slide2 {
+  background-image: url(./assets/background.png);
+  background-size: cover;
+}
+
+#slide3 {
+  background-image: url(./assets/backgroundDetails.jpeg);
+  background-size: cover;
+}
+
+#slide4 {
+  background-image: url(./assets/background.png);
+  background-size: cover;
+}
+
+#slide5 {
+  background-image: url(./assets/background.png);
+  background-size: cover;
+}
+
+#slide6 {
+  background-image: url(./assets/background.png);
+  background-size: cover;
+}
+
+.fp-controlArrow{
+  display: none !important;
+}
+
+.testDiv {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+}
+
+.test {
+  font-size: 26px;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.componentsBtn{
+    font-family: 'Zen Kurenaido', sans-serif;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: var(--rick-border);
+    padding: var(--mt-2);
+    font-size: 35px;
+    cursor: pointer;
+}

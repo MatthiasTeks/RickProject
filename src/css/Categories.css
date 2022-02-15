@@ -1,0 +1,28 @@
+.categories {
+	text-align: center;
+	padding-top: 30px;
+	font-family: var(--text-font);
+}
+
+.categories-select {
+	margin-right: 15px;
+	font-family: var(--text-font);
+}
+
+.categories button{
+	background-color: #16acc98f;
+	padding: 5px;
+	border-radius: 50px;
+	border: 2px solid var(--rick-border);
+	font-family: var(--text-font);
+	font-weight: bold;
+}
+
+.categories select{
+	background-color: #16acc98f;
+	padding: 5px;
+	border-radius: 50px;
+	border: 2px solid var(--rick-border);
+	font-family: var(--text-font);
+	font-weight: bold;
+}

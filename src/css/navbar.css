@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+/* =============== CLASSES =============== */
+
+.holderButton {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    flex-wrap: wrap;
+    top: 0%;
+    z-index: var(--z-tooltip);
+}
+
+.button {
+    font-family: 'Zen Kurenaido', sans-serif;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: var(--rick-border);
+    padding: var(--mt-2);
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.button:hover {
+    animation: hoverNavbar 3s linear infinite;
+}
+
+/* =============== BURGER =============== */
+
+label{
+    display:flex;
+    flex-direction:column;
+    width:30px;
+    cursor:pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: var(--mt-1);
+    opacity: 0.9;
+}
+   
+label span{
+    background: #fff;
+    border-radius:10px;
+    height:4px;
+    margin: 3px 0;
+    transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+   
+}
+   
+   
+span:nth-of-type(1){
+    width:50%;
+     
+}
+   
+span:nth-of-type(2){
+    width:100%;
+}
+   
+   
+span:nth-of-type(3){
+    width:75%;
+    
+}
+   
+   
+input[type="checkbox"]{
+    display:none;
+}
+   
+   
+input[type="checkbox"]:checked ~ span:nth-of-type(1){
+    transform-origin:bottom;
+    transform:rotatez(45deg) translate(3px,0px)
+}
+   
+   
+input[type="checkbox"]:checked ~ span:nth-of-type(2){
+     
+    transform-origin:top;
+    transform:rotatez(-42deg)
+}
+   
+   
+input[type="checkbox"]:checked ~ span:nth-of-type(3){
+     
+    transform-origin:bottom;
+    width:50%;
+    transform: translate(14px,-6px) rotatez(45deg);
+   
+}
+
+/* =============== QUERIES =============== */
+
+@media screen and (max-width:1024px) {
+    .button {
+        padding: var(--mt-1-5);
+    }
+}
+
+
+/* =============== KEYFRAMES =============== */
+
+@keyframes hoverNavbar {
+    0% {
+        color: var(--text-color);
+    }
+    20% {
+        color: var(--first-color);
+        text-shadow: var(--first-color) 2px 0 40px;
+    }
+    40% {
+        color: var(--first-color-darker);
+        text-shadow: var(--first-color-darker) 2px 0 40px;
+    }
+    60% {
+        color: var(--second-color);
+        text-shadow: var(--second-color) 2px 0 40px;
+    }
+    80% {
+        color: var(--second-color-flashy);
+        text-shadow: var(--second-color-flashy) 2px 0 40px;
+    }
+    100% {
+        color: var(--text-color);
+        text-shadow: none;
+    }
+}

@@ -1,0 +1,10 @@
+.fb-tableCell{
+    display: block !important;
+}
+
+.shopContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--text-font);
+}

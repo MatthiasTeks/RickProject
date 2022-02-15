@@ -1,0 +1,62 @@
+/* =============== CLASSES =============== */
+
+.rickFromLeft {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+}
+
+.rickFromLeftScreen {
+    position: absolute;
+    top: 25%;
+    left: -25%;
+    transform: rotate(35deg);
+    animation: apparitionLeft 1.5s ease-in 0.5s forwards;
+}
+
+.textArea {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 250px;
+    opacity: 0;
+    transform: rotate(25deg);
+    animation: apparitionBehind 0.2s ease-in 2.2s forwards;
+}
+
+.textSay {
+    position: absolute;
+    width: 160px;
+    top: 21%;
+    left: 13%;
+    font-size: var(--h2-font-size);
+    font-family: var(--text-font);
+    color: black;
+    transform: rotate(28deg);
+    opacity: 0;
+    animation: apparitionBehind 0.1s ease-in 2.3s forwards;
+}
+
+/* =============== KEYFRAMES =============== */
+
+@keyframes apparitionLeft {
+    from {
+    top: 25%;
+    left: -25%;
+    }
+    to {
+    top: 25%;
+    left: -12%;
+    }
+}
+
+@keyframes apparitionBehind {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+}
+

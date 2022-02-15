@@ -1,0 +1,115 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+.planetSlide{
+    width: 60%;
+    margin: 10rem auto;
+}
+
+.otherSlide img{
+    width: 20rem;
+    margin: 0 auto;
+    
+}
+
+.otherSlide{
+    transform: scale(0.4);
+    transition: transform 1000ms;
+    opacity: 0.5;
+    pointer-events:none;
+}
+
+.activeSlide{
+    transform: scale(1);
+    opacity:1;
+    cursor: url(../assets/portalCursor.png), pointer;
+}
+
+.planetName{
+    color: var(--rick-text);
+    text-shadow: 2px 0 0 var(--rick-border), -2px 0 0 var(--rick-border),0 2px 0 var(--rick-border),0 -2px 0 var(--rick-border), 1px 1px 0 var(--rick-border), -1px -1px 0 var(--rick-border),1px -1px 0 var(--rick-border),-1px 1px 0 var(--rick-border);
+    letter-spacing: 10px;
+    padding-top: 20px;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: var(--rick-font);
+}
+
+.arrow {
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    text-shadow: 2px 0 0 var(--rick-border), -2px 0 0 var(--rick-border),0 2px 0 var(--rick-border),0 -2px 0 var(--rick-border), 1px 1px 0 var(--rick-border), -1px -1px 0 var(--rick-border),1px -1px 0 var(--rick-border),-1px 1px 0 var(--rick-border);
+    color: var(--rick-border);
+}
+
+.arrow svg{
+    transition: color 300ms;
+}
+
+.arrow svg:hover{
+    color: var(--rick-text);
+}
+
+.next svg:hover{
+    cursor: url(../assets/arrowright.png), pointer;
+}
+
+.next {
+    right: -10%;
+    top: 50%;
+}
+
+.prev svg:hover{
+    cursor: url(../assets/arrowleft.png), pointer;
+}
+
+.prev {
+    left: -10%;
+    top: 50%;
+}
+
+.activePage{
+   
+    color: var(--rick-text);
+    text-shadow: 2px 0 0 var(--rick-border), -2px 0 0 var(--rick-border),0 2px 0 var(--rick-border),0 -2px 0 var(--rick-border), 1px 1px 0 var(--rick-border), -1px -1px 0 var(--rick-border),1px -1px 0 var(--rick-border),-1px 1px 0 var(--rick-border);
+    font-family: var(--rick-font);
+    font-size: 60px;
+}
+
+.componentNav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 10;
+    color: white;
+    margin: 50px;
+    font-size: 30px;
+}
+
+.componentNav .inactivePage{
+    margin-top: 20px;
+    font-family: var(--text-font);
+    color: var(--rick-border);
+    cursor: url(../assets/gunCursor.png), pointer;
+}
+
+.inactivePage:hover{
+        animation: hoverNavbar 3s linear infinite;
+}
+
+@media screen and (max-width: 1024px){
+    .planetName {
+        font: var(--text-font);
+        text-shadow: none;
+    }
+    .inactivePage {
+        display: none;
+    }
+}

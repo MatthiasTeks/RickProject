@@ -1,0 +1,83 @@
+
+
+
+.shop-cart {
+	color: black;
+	background-color: #16acc98f;
+	border-radius: 20px;
+	border: 2px solid #cceb83;
+	opacity: 85%;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-bottom: 200px;
+	margin-left:20px;
+}
+
+.shop-cart button {
+	
+	border-radius: 20px;
+	margin-top: 5px;
+	padding: 5px;
+	border: none;
+}
+
+
+.cart-add-button {
+	margin-left: 32px;
+	cursor: pointer;
+}
+
+.cart-toggle-button {
+	background: none;
+	outline: none;
+	border: none;
+	font-weight: 600;
+	cursor: pointer;
+	align-self: self-start;
+	padding: 0;
+	color: white;
+	font-family: var(--text-font);
+}
+
+.cart-closed {
+	padding: 32px;
+	width: 200px;
+}
+
+.cart-closed > button {
+	color: white;
+	background-color: #16acc98f;
+	border-radius: 20px;
+	padding: 5px;
+	text-align: center;
+	border: 2px solid var(--rick-border);
+}
+
+.shop-item-cover{
+	border-radius: 50%;
+	border: 2px solid black;
+	margin-bottom: 10px;
+}
+
+.cleanBasket{
+	color:black;
+	font-family: var(--text-font);
+	background-color: #4CAF50;
+	border: 1px solid black !important;
+	padding:7px;
+	text-align: center;
+	opacity: 0.6;
+	transition: 0.3s;
+	cursor:pointer;
+	border-radius: 8px !important;
+}
+
+.cleanBasket:hover{
+	opacity:1;
+}

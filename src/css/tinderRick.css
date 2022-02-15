@@ -1,0 +1,350 @@
+/* =============== CLASSES =============== */
+
+
+.tinderTitle{
+    position: absolute;
+    top: 0;
+    right: 10;
+    margin: 50px;
+    color: var(--rick-text);
+    text-shadow: 2px 0 0 var(--rick-border), -2px 0 0 var(--rick-border),0 2px 0 var(--rick-border),0 -2px 0 var(--rick-border), 1px 1px 0 var(--rick-border), -1px -1px 0 var(--rick-border),1px -1px 0 var(--rick-border),-1px 1px 0 var(--rick-border);
+    font-family: var(--rick-font);
+    font-size: 60px;
+}
+
+
+.interfaceTinder {
+    width: 350px;
+    height: 600px;
+    background-color: #16acc98f;
+    border-radius: 3px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border: 2px solid var(--second-color-flashy);
+}
+
+.holderTinder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header Tinder */
+
+.headerTinder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid #eee7e7 ;
+    border-bottom-width: 0.1em;
+}
+
+.imgApp {
+    text-align: center;
+    margin-top: 4%;
+}
+
+.imgTinder {
+    max-width: 100%;
+}
+
+.icon {
+    color: var(--text-color);
+    font-size: 26px;
+    margin: 4%;
+    cursor: pointer;
+}
+
+/* Profil Tinder */
+
+.profilTinder {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+
+.profilTinder:first-child {
+    padding-bottom: 2%;
+}
+
+.imgProfil {
+    border-radius: 10px;
+    opacity: 0.95;
+    width: 300px;
+    height: 300px;
+}
+
+.imgProfilHolder {
+    padding-bottom: 3%;
+}
+
+.resumeProfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+
+.gender {
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.resumeProfil > h3 {
+    font-family: var(--title-font);
+    color: var(--text-color);
+    white-space: nowrap;
+    text-shadow: 1px 1px var(--second-color-flashy);
+}
+
+.resumeProfil > div > h3 {
+    font-family: var(--title-font);
+    color: var(--text-color);
+    white-space: nowrap;
+    text-shadow: 1px 1px var(--second-color-flashy);
+}
+
+.resumeProfil > p {
+    font-family: var(--title-font);
+    color: var(--text-color);
+    font-weight: lighter;
+    text-shadow: 1px 1px var(--second-color-flashy);
+}
+
+/* Footer Tinder */
+
+.footerTinder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 5%;
+    padding-top: 5%;
+    border-top: 0.1em solid #eee7e7;
+}
+
+.iconTimes {
+    color: rgb(167, 20, 20);
+    font-size: 42px;
+    border-radius: 50%;
+    border: 5px solid #ece5e5;
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    padding: 4px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.iconHeart {
+    color: green;
+    font-size: 36px;
+    border-radius: 50%;
+    border: 5px solid #ece5e5;
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    padding: 8px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.chatbox {
+    width: 350px;
+    height: 600px;
+    background-color: #16acc98f;
+    border-radius: 3px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 65%;
+    border: 2px solid var(--rick-border);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    opacity: 0;
+    animation: 1s fadeIn 1s forwards;
+}
+
+.headerChat {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding: 5%;
+    border-bottom: solid #eee7e7;
+    border-bottom-width: 0.1em;
+}
+
+.imgPurpose > img {
+    border-radius: 70px;
+    opacity: 0.95;
+    width: 60px;
+    height: 60px;
+}
+
+.resumeChat {
+    margin-left: 15px;
+    font-family: var(--title-font);
+    text-shadow: 1px 1px var(--second-color-flashy);
+    color: var(--text-color);
+    white-space: nowrap;
+}
+
+.chat {
+    height: 400px;
+    width: 100%;
+    border-bottom: solid #eee7e7;
+    border-bottom-width: 0.1em;
+}
+
+.chatArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+.buttonSend button{
+    background-color: white;
+    font-family: var(--text-font);
+    width: 50px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    border: 2px solid var(--rick-border);
+}
+
+.chatArea input{
+    background-color: white;
+    font-family: var(--text-font);
+    padding-bottom: 3px;
+    border-radius: 10px;
+    width: 200px;
+    border: 2px solid var(--rick-border);
+}
+
+.matching > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: match 4s forwards;
+    transition: ease-in;
+}
+
+.left {
+    animation: movingLeft 1s forwards;
+}
+
+.message {
+    background-color: var(--first-color-darker);
+    margin: 2%;
+    border-radius: 6px;
+    padding: 4px;
+    overflow: hidden;
+}
+
+.message > p {
+    font-family: var(--title-font);
+    color: var(--text-color);
+    font-weight: lighter;
+    text-shadow: 1px 1px var(--second-color-flashy);
+}
+
+@keyframes movingLeft {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 35%;
+    }
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes match {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1)
+    }
+    25% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(1.5)
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(2)
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(1)
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .interfaceTinder {
+        top: 30%;
+        width: 350px;
+        height: 360px;
+    }
+    .icon {
+        font-size: 20px;
+    }
+    .imgTinder {
+        max-width: 70%;
+    }
+    .imgProfil {
+        width: 150px;
+        height: 150px;
+    }
+    .footerTinder {
+        margin-top: 2%;
+        padding-top: 2%;
+    }
+    .iconTimes {
+        font-size: 24px;
+        border: 3px solid #ECE5E5;
+        height: 35px;
+        width: 35px;
+        padding: 2px;
+        margin-top: 2px;
+    }
+    .iconHeart {
+        font-size: 24px;
+        border: 3px solid #ECE5E5;
+        height: 35px;
+        width: 35px;
+        padding: 3px;
+        margin-top: 4px;
+    }
+    .chatbox {
+        height: 250px;
+        top: 70%;
+        left: 50%;
+    }
+    .left {
+        animation: none;
+    }
+}
+@media screen and (max-height: 740px){
+    .interfaceTinder {
+        top: 36%;
+        width: 350px;
+        height: 360px;
+    }
+    .chatbox {
+        height: 230px;
+        top: 81%;
+    }
+}
