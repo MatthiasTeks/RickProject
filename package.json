@@ -1,6 +1,6 @@
 {
-  "homepage": "http://MatthiasTeks.github.io/RickProject",
-  "name": "test",
+  "homepage": "http://matthiasteks.github.io/rickproject",
+  "name": "rickproject",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
